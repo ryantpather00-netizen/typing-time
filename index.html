@@ -17,48 +17,24 @@
       <section id="home" class="section active">
         <p class="small-text">typing practice for beginners</p>
         <h2 class="hero-title">TYPE</h2>
-        <p class="description">
-          Learn where letters are on the keyboard, practise correct finger placement,
-          and improve your <span class="highlight">speed</span> and
-          <span class="highlight">accuracy</span> one step at a time.
-        </p>
-        <p class="description">Start with letters, move to words, then finish with short sentences.</p>
+        <p class="description">Learn the keyboard and improve your typing.</p>
         <div class="button-row">
           <button onclick="showSection('learn')">Learn Basics</button>
           <button onclick="startLesson(1)">Start Level 1</button>
         </div>
-        <p class="footer-note">look at the screen, not the keyboard</p>
       </section>
 
       <section id="learn" class="section">
         <p class="small-text">learn page</p>
         <h2 class="hero-title">KEYS</h2>
-
         <div class="card">
           <h3 class="subheading">Home Row Basics</h3>
           <ul>
             <li>A S D F are typed by your left hand.</li>
             <li>J K L ; are typed by your right hand.</li>
             <li>Your index fingers rest on F and J.</li>
-            <li>Keep your wrists relaxed and sit up straight.</li>
-            <li>Try to look at the screen instead of the keyboard.</li>
           </ul>
         </div>
-
-        <div class="card">
-          <h3 class="subheading">Finger Guide</h3>
-          <ul>
-            <li>Left pinky: A</li>
-            <li>Left ring finger: S</li>
-            <li>Left middle finger: D</li>
-            <li>Left index finger: F and nearby keys</li>
-            <li>Right index finger: J and nearby keys</li>
-            <li>Right middle finger: K</li>
-            <li>Right ring finger: L</li>
-            <li>Right pinky: ;</li>
-          </ul>
-        </div>
-
         <div class="button-row">
           <button onclick="showSection('home')">Back Home</button>
           <button onclick="startLesson(1)">Level 1</button>
@@ -71,38 +47,16 @@
         <p class="small-text">practice page</p>
         <h2 class="hero-title">TEST</h2>
         <p class="level-select" id="levelLabel">Level 1</p>
-
         <div class="card">
           <p class="lesson-text" id="displayText">a</p>
           <input type="text" id="typingInput" placeholder="Type here" autocomplete="off">
           <div class="button-row">
             <button onclick="checkTyping()">Submit</button>
-            <button onclick="showSection('learn')">Change Level</button>
           </div>
-
           <p class="feedback" id="feedbackMessage"></p>
-
           <div class="stats">
             <p>Score: <span id="scoreValue">0</span></p>
-            <p>Accuracy: <span id="accuracyValue">0</span>%</p>
             <p>Item: <span id="progressValue">1</span></p>
-          </div>
-
-          <p class="keyboard-note">Press Enter to submit faster.</p>
-        </div>
-      </section>
-
-      <section id="results" class="section">
-        <p class="small-text">results page</p>
-        <h2 class="hero-title">DONE</h2>
-
-        <div class="card">
-          <p class="subheading">Lesson Complete</p>
-          <p class="result-number" id="finalScore">0 / 0</p>
-          <p class="description" id="finalSummary">Great work.</p>
-          <div class="button-row">
-            <button onclick="restartLevel()">Retry Level</button>
-            <button onclick="showSection('home')">Home</button>
           </div>
         </div>
       </section>
